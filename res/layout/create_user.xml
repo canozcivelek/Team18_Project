@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:text="User Name" />
+
+            <EditText
+                android:id="@+id/etCrUsrLoginName"
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".51" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btnCrUsrCheck"
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".29"
+                android:text="Check Available" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:text="Name, Surname" />
+
+            <EditText
+                android:id="@+id/etCrUsrUserName"
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top" >
+
+            <TextView
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/etCrUsrPass"
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:lines="2"
+                android:text="Reenter Password" />
+
+            <EditText
+                android:id="@+id/etCrUsrPassCont"
+                style="@style/tvNormal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/btnCrUsrCreate"
+                style="@style/tvNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

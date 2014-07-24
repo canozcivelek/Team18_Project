@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_bg_rect"
+    android:orientation="horizontal"
+    android:padding="2dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/listview_image_bg_rect"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/ivEvListThumb"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/default_event"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/tvEvListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="13dip"
+        android:textStyle="bold"/>
+ 
+   
+ 
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/tvEvListAttendLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tvEvListTitle"
+        android:gravity="right"
+        android:text="5:45"
+        android:layout_marginRight="5dip"
+        android:textSize="10sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/tvEvListElapsedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvEvListAttendLike"
+        android:gravity="right"
+        android:text="5:45 asd asd "
+        android:layout_marginRight="5dip"
+        android:textSize="10sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:id="@+id/ivEvListDelete"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_below="@id/tvEvListElapsedTime"
+        />
+      <!-- Artist Name -->
+    <TextView
+        android:id="@+id/tvEvListDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEvListTitle"
+        android:textColor="#343434"
+        android:textSize="10sp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_toLeftOf="@id/ivEvListDelete"
+        android:text="Just gona stand there and asdf asd fasd fasd fasdf asdf f asdf ..." />
+ 
+</RelativeLayout>

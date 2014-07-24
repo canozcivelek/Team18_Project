@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Evventer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_txt">Login with Facebook</string>
+    <string name="welcome_txt">WELCOME</string>
+    <string name="welcome_desc">
+        EventComm Application lets you discover
+    	new events around you and lets you see others comments and ratings.
+        To start, you need to log in to our system via your Facebook account.
+    </string>
+    <string name="nameSurname">Can</string>
+    <string name="btnList">List Events</string>
+    <string name="btnCreate">Create New Event</string>
+    <string name="btnSearch">Search Event</string>
+    <string name="btnFav">Favorites List</string>
+    <string name="upcoming">Upcoming Events</string>
+    
+    <string-array name="array_comparisons">
+        
+        <item>=</item>
+        <item>&lt;</item>
+        <item>&gt;</item>
+	</string-array>
+    
+    <string-array name="cats">
+                <item>Movie</item>
+                <item>Music</item>
+                <item>Theatre</item>
+                <item>Other…</item>
+    </string-array>
+    
+    <string-array name="locs">
+                <item>Ankara</item>
+                <item>İstanbul</item>
+                <item>İzmir</item>
+    </string-array>
+    
+    <string-array name="favs">
+        <item>Tarkan Konseri</item>
+        <item>12 Years a Slave</item>
+        <item>Justin Timberlake Konseri</item>
+    </string-array>
+    
+    <string name="APP_ID">347798612038640</string>
+    
+	    
+    <!-- Layout Button Components -->
+    
+    <!-- *******************************************************************
+    		HACI BURAYA DIKKAT ET BUNA GÖRE DÜZENLERSEN CODING STYLA UYAR
+    		birde layout isimlerine ve içindeki idlere de dikkat et create_event.xmli örnek 
+    		olarak kullanabilirsin.
+    		 
+    		Example String : btnCrEvCreateEvent
+    		First word defines type like btn which is Button. 
+    		Second word refers to layout name that CrEv means create_event.xml.
+    		Last word, CreateEvent, gives hint about content of the string that Create Event 
+    		sp: spinner
+    		et: edittext
+    		tv: textview
+    		acTv: autocompletetextview
+    		btn: button
+    		  
+    *************************************************************************** -->
+    <string name="btnLgLogin">Login</string>
+    <string name="btnLgFaceLogin">Login with Facebook</string>
+    <string name="btnCrEvCreateEvent">Create Event</string>
+       
+    <!-- Layout TextView Components -->
+    <string name="tvCrEvAddress">Address</string>
+    
+    <!-- Form Validation Warning -->
+    <string name="spWarn_CategoryMustBeSelected">Category must be selected</string>
+    
+    <!-- Web Service Functions -->
+    <string name="ws_webservice_ip">http://192.168.107.1/</string>
+    <string name="ws_webservice_ip_emulator">http://10.0.2.2/</string>
+    
+    <string name="ws_events_create">events/do.php/create</string>
+    <string name="ws_events_delete">events/do.php/delete</string>
+    <string name="ws_events_list">events/do.php/list</string>
+    <string name="ws_events_search">events/do.php/search</string>
+    
+    <string name="ws_events_comment_list">events/comment.php/list</string>
+    <string name="ws_events_comment_add">events/comment.php/add</string>
+    <string name="ws_events_comment_delete">events/comment.php/delete</string>
+    <string name="ws_events_comment_like">events/comment.php/like</string>
+    <string name="ws_events_comment_unlike">events/comment.php/unlike</string>
+    
+    <string name="ws_events_like">events/user_like.php/like</string>
+    <string name="ws_events_unlike">events/user_like.php/unlike</string>
+    <string name="ws_events_is_like">events/user_like.php/is_like</string>
+    <string name="ws_events_is_unlike">events/user_like.php/is_unlike</string>
+    <string name="ws_events_liked">events/user_like.php/liked</string>
+    
+    <string name="ws_events_attended">events/user_attend.php/attended</string>
+   	<string name="ws_events_is_attend">events/user_attend.php/is_attend</string>
+    <string name="ws_events_attend">events/user_attend.php/attend</string>
+        
+    <string name="ws_autocomplete_city">general/autocomplete.php/cities</string>
+    <string name="ws_autocomplete_county">general/autocomplete.php/counties</string>
+    <string name="ws_category_list">general/autocomplete.php/categories</string>
+    
+    <string name="ws_nicename_city">general/nice_name.php/city</string>
+    <string name="ws_nicename_county">general/nice_name.php/county</string>
+    <string name="ws_nicename_category">general/nice_name.php/category</string>
+    
+    <string name="ws_users_authenticate">users/do.php/authenticate</string>
+    <string name="ws_users_check_available">users/do.php/check_available</string>
+    <string name="ws_users_create">users/do.php/create</string>
+</resources>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_bg_rect"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/listview_image_bg_rect"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/ivComListUserIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/default_user"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/tvComListUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="13dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/tvComListComment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvComListUserName"
+        android:textColor="#343434"
+        android:textSize="10sp"
+        android:layout_marginTop="1dip"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and asdf as fasd fasdf asdf asdf asd fasd fasdf asdf asdf asdf asd fasdf asd f" />
+ 
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/tvComListDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tvComListUserName"
+        android:gravity="right"
+        android:text="5:45"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:id="@+id/ivComListDelete"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+ 
+</RelativeLayout>

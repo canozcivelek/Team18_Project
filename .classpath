@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="D:/ismail/_android/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="D:/ismail/_android/libs/slf4j/slf4j-android-1.5.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ismail/_android/libs/google/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ismail/_android/libs/joda-time-2.3.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FacebookSDK"/>
+	<classpathentry exported="true" kind="lib" path="D:/ismail/_android/libs/facebook/facebook-android-sdk.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

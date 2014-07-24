@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Title" />
+
+        <EditText
+            android:id="@+id/etCrEvTitle"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/etCrEvDesc"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:lines="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="top" >
+
+        <Button
+            android:id="@+id/btnCrEvShowAddrDialog"
+            style="@style/tvNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Address (Opens Dialog)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Category" />
+
+        <Spinner
+            android:id="@+id/spCrEvCategory"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:prompt="@string/spWarn_CategoryMustBeSelected" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Start Date" />
+
+        <EditText
+            android:id="@+id/etCrEvStartDate"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".45"
+            android:editable="false"
+            android:inputType="date"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/btnCrEvStartDate"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="Calendar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Start Time" />
+
+        <EditText
+            android:id="@+id/etCrEvStartTime"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".45"
+            android:editable="false"
+            android:inputType="time"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/btnCrEvStartTime"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="Clock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="End Date" />
+
+        <EditText
+            android:id="@+id/etCrEvEndDate"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".45"
+            android:editable="false"
+            android:inputType="date"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/btnCrEvEndDate"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="Calendar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="End Time" />
+
+        <EditText
+            android:id="@+id/etCrEvEndTime"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".45"
+            android:editable="false"
+            android:inputType="time"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/btnCrEvEndTime"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="Clock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Image" />
+
+        <ImageView
+            android:id="@+id/ivCrEvThumbnail"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".45"
+            android:editable="false"
+            android:inputType="time"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/btnCrEvSetThumbnail"
+            style="@style/tvNormal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="Set Image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnCrEvCreate"
+            style="@style/tvNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Event" />
+    </LinearLayout>
+
+</LinearLayout>
